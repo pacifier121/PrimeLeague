@@ -1,0 +1,136 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px;
+}
+
+.bg-image{
+    background: url('./Cricket.jpg');
+    background-size: cover;
+    
+    filter: blur(3px);
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: -1;
+}
+
+.container{
+    margin: 0 auto;
+    width: 60%;
+}
+
+.top-header{
+    text-align: center;
+    text-shadow: 0px 0px 10px white;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 5rem 0;
+}
+
+.top-header h1{
+    font-size: 4rem;
+    margin: 0;
+    padding: 0;
+}
+
+.top-header .divider{
+    background-color: white;
+    height: 0.2rem;
+    opacity: 0.3;
+}
+
+.content-container{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+    background-color: rgba(255,255,255,0.8);
+    padding: 2rem;
+    border-radius: 0.5rem;
+    margin: 2rem 0;
+}
+
+.content-container .desc{
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+}
+
+.content-container ol{
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.register{
+    display: flex;
+    justify-content: center;
+}
+
+.register button{
+    background-color: #ED2B2A;
+    color: white;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    transition: ease-in-out 0.2s;
+}
+
+.register button:hover{
+    background-color: #F15A59;
+    transform: translateY(-0.5rem);
+}
+
+.contact{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.contact div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact-header{
+    display: flex;
+    align-items: center;
+}
+
+.contact-info{
+    text-align: end;
+}
+
+.contact a{
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.contact a:hover{
+    text-decoration: underline;
+}
+
+/* Footer */
+footer{
+    background-color: rgba(255,255,255,0.8);
+    text-align: center;
+    font-size: 1.2rem;
+    color: #555;
+    padding: 0.5rem 0;
+}
+
+/* Media queries */
+@media (max-width: 900px) {
+    .container{
+        width: 100%;
+    }
+}
