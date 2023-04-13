@@ -22,8 +22,13 @@
     <nav>
         <div class="nav-left">
             <img src="./images/the_prime_league_logo.jpg" alt="">
+            <button id="ham-btn">
+                <div></div>
+                <div></div>
+                <div></div>
+            </button>
         </div>
-        <div class="nav-right">
+        <div id="navRight" class="nav-right">
             <a href="#about">About</a>
             <a href="#selection">Selection</a>
             <a href="#contact">Contact</a>
@@ -98,7 +103,7 @@
                 <li>The man of the match in TPL final match is Rs. 21000 and trophy</li>
                 <li>The man of the series for the national level is Rs. 100000 and trophy</li>
                 <li>Free academy coaching will be provided to best 11 players of TPL and and expenditure will be made by TPL</li>
-            </ol> 
+            </ol>
             <p><b>Note</b> : You can also invite your friend to join TPL</p>
         </section> 
         <section class="register"> 
@@ -129,5 +134,14 @@
     <footer>
         Copyright © The Prime League 2023
     </footer>
+    
+    <script>
+        const hamBtn = document.getElementById('ham-btn');
+        const navRight = document.getElementById('navRight');
+        
+        hamBtn.onclick = () => {
+            navRight.style.display = (navRight.style.display === 'none' ? 'flex' : 'none');
+        }
+    </script>
 </body>
 </html>
