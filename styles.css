@@ -10,7 +10,7 @@ body{
 }
 
 .bg-image{
-    background: url('./Cricket.jpg');
+    background: url('./images/CricketBG.jpg');
     background-size: cover;
     
     filter: blur(3px);
@@ -24,6 +24,47 @@ body{
 .container{
     margin: 0 auto;
     width: 60%;
+}
+
+nav{
+    height: 5rem;
+    background-color: #F7F7F7;
+    display: flex;
+    padding: 0 10%;
+    justify-content: space-between;
+    box-shadow: 0px 0px 5px gray;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-left{
+    padding: 0.5rem;
+    width: 50%;
+}
+
+.nav-left img{
+    height: 100%;
+}
+
+.nav-right{
+    font-size: 1.5rem;
+    white-space: nowrap;
+    align-items: center;
+    display: flex;
+    justify-content: end;
+    gap: 2.5rem;
+    width: 50%;
+}
+
+.nav-right a{
+    text-decoration: none;
+    transition: ease-in-out 0.2s;
+}
+
+.nav-right a:hover{
+    text-decoration: underline;
+    transform: translateY(-0.2rem);
 }
 
 .top-header{
@@ -91,14 +132,15 @@ body{
 
 .contact{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
+    gap: 2rem;
 }
 
-.contact div{
+.contact-details{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .contact-header{
@@ -107,7 +149,26 @@ body{
 }
 
 .contact-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     text-align: end;
+}
+
+.follow-details{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.follow-details .desc{
+    margin-bottom: 0;
+}
+
+.follow-icons{
+    display: flex;
+    gap: 3rem;
+    font-size: 2rem;
 }
 
 .contact a{
@@ -117,6 +178,13 @@ body{
 
 .contact a:hover{
     text-decoration: underline;
+    transform: scale(1.2);
+    transition: ease-in-out 0.2s;
+}
+
+.contact .divider{
+    height: 2px;
+    background-color: #bbb;
 }
 
 /* Footer */
@@ -132,5 +200,17 @@ footer{
 @media (max-width: 900px) {
     .container{
         width: 100%;
+    }
+}
+
+@media (max-width: 800px) {
+    nav{
+        width: 100%;
+        padding: 0;
+    }
+    .nav-right{
+        gap: 5%;
+        font-size: 1.2rem;
+        padding-right: 1rem;
     }
 }

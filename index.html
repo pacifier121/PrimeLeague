@@ -11,12 +11,24 @@
      <!-- Latest compiled and minified CSS -->
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+     <link rel="icon" type="image/x-icon" href="./images/the_prime_league_logo.jpg">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
 
     <div class="bg-image"></div>
+    <nav>
+        <div class="nav-left">
+            <img src="./images/the_prime_league_logo.jpg" alt="">
+        </div>
+        <div class="nav-right">
+            <a href="#about">About</a>
+            <a href="#selection">Selection</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav> 
     <div class="container">
         <section class="top-header">
             <h1 class="header">The Prime League</h1>
@@ -35,13 +47,13 @@
                 <!-- Wrapper for carousel items -->
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="cric1.jpg" class="d-block w-100" alt="Slide 1">
+                        <img src="images/cric1.png" class="d-block w-100" alt="Slide 1">
                     </div>
                     <div class="carousel-item">
-                        <img src="cric2.jpg" class="d-block w-100" alt="Slide 2">
+                        <img src="images/cric2.png" class="d-block w-100" alt="Slide 2">
                     </div>
                     <div class="carousel-item">
-                        <img src="cric3.jpg" class="d-block w-100" alt="Slide 3">
+                        <img src="images/cric3.png" class="d-block w-100" alt="Slide 3">
                     </div>
                 </div>
         
@@ -54,7 +66,7 @@
                 </a>
             </div>
         </section>
-        <section class="about content-container">
+        <section id="about" class="about content-container">
             <p class="desc">About <b>The Prime League</b></p>
             <ol>
                 <li>Free Registration</li>
@@ -66,7 +78,7 @@
                 <li>Live match will be telecast on official YouTube channel of The prime League "The Prime League (TPL)"</li>
             </ol> 
         </section> 
-        <section class="selection content-container">
+        <section id="selection" class="selection content-container">
             <p class="desc">Selection Process of <b>The Prime League</b></p>
             <ol>
                 <li>The players who perform well in TPL will get selected for state league.</li>
@@ -90,16 +102,27 @@
             <p><b>Note</b> : You can also invite your friend to join TPL</p>
         </section> 
         <section class="register"> 
-            <a href="#"><button>Register Here</button></a>
+            <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSdytXmKd899AWQhO-KQpLVBGc3I3J6Zg-I3HEj3-eVfiFeVbA/viewform"><button>Register Here</button></a>
         </section> 
-        <section class="contact content-container"> 
-            <div class="contact-header">
-                <p class="desc">Contact <br/><b>The Prime League</b></p>
+        <section id="contact" class="contact content-container"> 
+            <div class="contact-details">
+                <div class="contact-header">
+                    <p class="desc">Contact <br/><b>The Prime League</b></p>
+                </div>
+                <div class="contact-info">
+                    <p>Address: <b>Greater Noida ,Gautam Budh Nagar, Uttar Pradesh</b></p> 
+                    <p>Phone: <b>7454989865</b></p> 
+                    <p>Email: <a href="theprimeleague@gmail.com">theprimeleague@gmail.com</a></p> 
+                </div>
             </div>
-            <div class="contact-info">
-                <p>Address: <b>Greater Noida ,Gautam Budh Nagar, Uttar Pradesh</b></p> 
-                <p>Phone: <b>7454989865</b></p> 
-                <p>Email: <a href="theprimeleague@gmail.com">theprimeleague@gmail.com</a></p> 
+            <div class="divider"></div>
+            <div class="follow-details">
+                <span class="desc">Follow us on</span>
+                <div class="follow-icons">
+                    <a target="_blank" href="https://instagram.com/theprimeleagues?igshid=ZDdkNTZiNTM="><i class="fa-brands fa-instagram"></i></a>
+                    <a target="_blank" href="https://www.facebook.com/profile.php?id=100091536361571"><i class="fa-brands fa-facebook"></i></a>
+                    <a target="_blank" href="https://www.youtube.com/channel/UCE6jI9g12wqSpTQzfMYQSRw"><i class="fa-brands fa-youtube"></i></a>
+                </div>
             </div>
         </section> 
     </div>
